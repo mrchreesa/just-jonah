@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Just Jonah | The toy shop on Fore Street, Fowey</title>
+  <meta name="description" content="Toys, games, puzzles, kids' clothing and the full Fahlo animal-tracking range. Open every day at 36A Fore Street, Fowey, and online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Ultra&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="Just Jonah home">
+      <span class="wordmark__text" data-shade="Just Jonah">Just Jonah</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#shelves">Shop</a>
+      <a href="#fahlo">Fahlo</a>
+      <a href="#visit">Visit us</a>
+      <a href="#delivery">Delivery</a>
+    </nav>
+
+    <div class="header__actions">
+      <button class="basket" type="button" aria-label="Basket, 0 items" data-basket>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+        <span class="basket__count" data-basket-count>0</span>
+      </button>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" data-menu>
+        <span></span><span></span><span class="sr-only">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Hero: walk into the shop ============ -->
+    <section class="hero" aria-label="Welcome to Just Jonah" data-hero>
+      <div class="hero__sticky">
+        <div class="sky" aria-hidden="true">
+          <svg class="cloud cloud--a" viewBox="0 0 200 70"><path d="M30 60a25 25 0 0 1 4-49 32 32 0 0 1 60-4 26 26 0 0 1 44 12 22 22 0 0 1 32 41Z"/></svg>
+          <svg class="cloud cloud--b" viewBox="0 0 200 70"><path d="M30 60a25 25 0 0 1 4-49 32 32 0 0 1 60-4 26 26 0 0 1 44 12 22 22 0 0 1 32 41Z"/></svg>
+          <svg class="cloud cloud--c" viewBox="0 0 200 70"><path d="M30 60a25 25 0 0 1 4-49 32 32 0 0 1 60-4 26 26 0 0 1 44 12 22 22 0 0 1 32 41Z"/></svg>
+          <svg class="gull-fly" viewBox="0 0 60 20"><path d="M2 14 Q15 0 30 12 Q45 0 58 14" /></svg>
+        </div>
+
+        <!-- Polruan hillside across the river: far parallax layer -->
+        <svg class="hill" data-hill viewBox="0 0 1600 420" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+          <path class="hill__land" d="M0 300 C 200 250 400 170 600 190 S 900 260 1100 210 S 1420 120 1600 160 V420 H0Z"/>
+          <g class="hill__houses">
+            <rect x="560" y="176" width="34" height="30" fill="#F4C3B8"/><path d="M557 178 l20-15 20 15Z" fill="#7B8794"/>
+            <rect x="604" y="186" width="30" height="26" fill="#FFF4E2"/><path d="M601 188 l18-13 18 13Z" fill="#7B8794"/>
+            <rect x="644" y="194" width="36" height="28" fill="#A9D3E3"/><path d="M641 196 l21-15 21 15Z" fill="#7B8794"/>
+            <rect x="690" y="204" width="30" height="26" fill="#F2C94C"/><path d="M687 206 l18-13 18 13Z" fill="#7B8794"/>
+            <rect x="1440" y="140" width="40" height="34" fill="#FFF4E2"/><path d="M1436 142 l24-18 24 18Z" fill="#7B8794"/>
+            <rect x="1492" y="132" width="44" height="36" fill="#F4C3B8"/><path d="M1488 134 l26-19 26 19Z" fill="#7B8794"/>
+            <rect x="1548" y="140" width="38" height="32" fill="#A9D3E3"/><path d="M1544 142 l23-17 23 17Z" fill="#7B8794"/>
+          </g>
+          <path class="hill__water" d="M0 330 H1600 V420 H0Z"/>
+          <g class="boat" transform="translate(300 318)">
+            <path d="M0 10 h70 l-10 14 h-50Z" fill="#D93A2B"/><path d="M34 10 V-38 L62 6Z" fill="#FFF"/><path d="M32 10 V-28 L10 6Z" fill="#F2C94C"/>
+          </g>
+          <g class="boat boat--two" transform="translate(1180 324)">
+            <path d="M0 8 h54 l-8 12 h-38Z" fill="#12505A"/><path d="M26 8 V-30 L48 4Z" fill="#FFF"/>
+          </g>
+        </svg>
+
+        <div class="hero__copy" data-hero-copy>
+          <p class="status-pill" data-open-pill>
+            <span class="status-pill__dot" aria-hidden="true"></span>
+            <span data-open-text>Open every day, 10am to 5:30pm</span>
+          </p>
+          <h1 class="hero__title">The toy shop on Fore&nbsp;Street</h1>
+          <p class="hero__lede">Toys, games, puzzles, kids' clothes and the whole Fahlo animal-tracking range. Open every day in Fowey, and online whenever you're not in Cornwall.</p>
+          <div class="hero__ctas">
+            <a class="btn btn--red" href="#shelves">Shop online</a>
+            <a class="btn btn--ghost" href="#visit">Plan a visit</a>
+          </div>
+        </div>
+
+        <div class="world" data-world>
+          <div class="pavement" aria-hidden="true"></div>
+
+          <div class="stage" data-stage>
+            <svg class="shopfront" viewBox="0 0 1000 1000" role="img" aria-label="Illustration of the Just Jonah shopfront on Fore Street, with toys in the windows">
+              <defs>
+                <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#2C5866"/>
+                  <stop offset="1" stop-color="#1B3F4A"/>
+                </linearGradient>
+                <linearGradient id="lamplight" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#FFE7A3"/>
+                  <stop offset="1" stop-color="#F2B347"/>
+                </linearGradient>
+                <radialGradient id="windowGlow" cx="0.5" cy="0.15" r="0.9">
+                  <stop offset="0" stop-color="#FFE7A3" stop-opacity=".55"/>
+                  <stop offset="1" stop-color="#FFE7A3" stop-opacity="0"/>
+                </radialGradient>
+                <clipPath id="clipLeft"><rect x="162" y="702" width="256" height="196"/></clipPath>
+                <clipPath id="clipRight"><rect x="582" y="702" width="256" height="196"/></clipPath>
+                <clipPath id="tile"><rect width="70" height="70" rx="6"/></clipPath>
+                <pattern id="lichen" width="90" height="40" patternUnits="userSpaceOnUse">
+                  <circle cx="12" cy="10" r="4" fill="#E9C547"/><circle cx="58" cy="26" r="5" fill="#E9C547" opacity=".8"/><circle cx="76" cy="8" r="2.5" fill="#E9C547"/>
+                </pattern>
+              </defs>
+
+              <!-- neighbours -->
+              <rect x="0" y="210" width="96" height="790" fill="#F4D27A"/>
+              <path d="M-10 214 L96 214 L96 190 L-10 190Z" fill="#596572"/>
+              <rect x="20" y="300" width="56" height="120" fill="#FFF" /><rect x="28" y="308" width="40" height="104" fill="#2C5866"/>
+              <rect x="20" y="640" width="56" height="200" fill="#FFF" /><rect x="28" y="648" width="40" height="184" fill="#2C5866"/>
+              <rect x="904" y="130" width="96" height="870" fill="#A9D3E3"/>
+              <path d="M904 134 L1010 134 L1010 108 L904 108Z" fill="#596572"/>
+              <rect x="926" y="230" width="56" height="130" fill="#FFF"/><rect x="934" y="238" width="40" height="114" fill="#2C5866"/>
+              <rect x="914" y="140" width="8" height="860" fill="#7E9AA6"/>
+
+              <!-- roof + chimney -->
+              <rect x="690" y="34" width="62" height="70" fill="#8A6A5A"/>
+              <rect x="684" y="28" width="74" height="12" fill="#6E5446"/>
+              <rect x="698" y="12" width="18" height="18" rx="2" fill="#D9733B"/>
+              <rect x="726" y="14" width="18" height="16" rx="2" fill="#D9733B"/>
+              <g class="gull" transform="translate(744 -6)">
+                <ellipse cx="0" cy="12" rx="17" ry="11" fill="#FFF"/>
+                <path d="M-14 10 q10 -6 24 2 q-8 8 -24 -2Z" fill="#AEB8C2"/>
+                <g class="gull__head"><circle cx="13" cy="0" r="8" fill="#FFF"/><circle cx="16" cy="-2" r="1.6" fill="#173B45"/><path d="M20 1 l9 2 -9 2Z" fill="#F2B347"/></g>
+                <path d="M-2 22 v6 M4 22 v6" stroke="#F2B347" stroke-width="2"/>
+              </g>
+              <path d="M68 154 L932 154 L888 88 L112 88Z" fill="#46505E"/>
+              <path d="M68 154 L932 154 L888 88 L112 88Z" fill="url(#lichen)" opacity=".9"/>
+              <path d="M112 88 H888" stroke="#2F3741" stroke-width="5"/>
+
+              <!-- upper floor -->
+              <rect x="90" y="154" width="820" height="410" fill="#F4C3B8"/>
+              <g class="sash">
+                <rect x="196" y="206" width="168" height="238" fill="#FFF8EC"/>
+                <rect x="208" y="218" width="144" height="102" fill="url(#glass)"/>
+                <rect x="208" y="330" width="144" height="102" fill="url(#glass)"/>
+                <path d="M280 218 V320 M280 330 V432 M208 269 H352 M208 381 H352" stroke="#FFF8EC" stroke-width="6"/>
+                <path d="M216 226 l40 0 -60 60Z" fill="#FFF" opacity=".12"/>
+              </g>
+              <g class="sash">
+                <rect x="636" y="206" width="168" height="238" fill="#FFF8EC"/>
+                <rect x="648" y="218" width="144" height="102" fill="url(#glass)"/>
+                <rect x="648" y="330" width="144" height="102" fill="url(#glass)"/>
+                <path d="M720 218 V320 M720 330 V432 M648 269 H792 M648 381 H792" stroke="#FFF8EC" stroke-width="6"/>
+                <path d="M656 226 l40 0 -60 60Z" fill="#FFF" opacity=".12"/>
+              </g>
+              <!-- window boxes -->
+              <g>
+                <rect x="186" y="444" width="188" height="28" rx="3" fill="#12505A"/>
+                <g class="flowers"><circle cx="206" cy="440" r="10" fill="#D93A2B"/><circle cx="232" cy="434" r="9" fill="#F2C94C"/><circle cx="258" cy="440" r="10" fill="#D93A2B"/><circle cx="284" cy="433" r="9" fill="#FFF"/><circle cx="310" cy="440" r="10" fill="#D93A2B"/><circle cx="336" cy="434" r="9" fill="#F2C94C"/><circle cx="356" cy="441" r="8" fill="#D93A2B"/></g>
+                <rect x="626" y="444" width="188" height="28" rx="3" fill="#12505A"/>
+                <g class="flowers"><circle cx="646" cy="440" r="10" fill="#F2C94C"/><circle cx="672" cy="434" r="9" fill="#D93A2B"/><circle cx="698" cy="440" r="10" fill="#FFF"/><circle cx="724" cy="433" r="9" fill="#D93A2B"/><circle cx="750" cy="440" r="10" fill="#F2C94C"/><circle cx="776" cy="434" r="9" fill="#D93A2B"/><circle cx="796" cy="441" r="8" fill="#FFF"/></g>
+              </g>
+              <!-- house number plaque -->
+              <ellipse cx="500" cy="326" rx="54" ry="34" fill="#FFF8EC" stroke="#12505A" stroke-width="5"/>
+              <text x="500" y="340" text-anchor="middle" class="svg-ultra" font-size="36" fill="#12505A">36A</text>
+
+              <!-- bunting -->
+              <path d="M90 486 Q500 556 910 486" fill="none" stroke="#173B45" stroke-width="2.5"/>
+              <g data-bunting></g>
+
+              <!-- cornice + fascia -->
+              <rect x="78" y="564" width="844" height="22" fill="#FFF4E2"/>
+              <rect x="78" y="586" width="844" height="5" fill="#E3D3B8"/>
+              <rect x="100" y="591" width="800" height="88" fill="#12505A"/>
+              <rect x="112" y="601" width="776" height="68" fill="none" stroke="#F2C94C" stroke-width="3"/>
+              <path d="M78 591 h22 v88 h-10 l-12 -24Z M922 591 h-22 v88 h10 l12 -24Z" fill="#FFF4E2"/>
+              <text x="503" y="658" text-anchor="middle" class="svg-ultra" font-size="56" fill="#D93A2B">Just Jonah</text>
+              <text x="500" y="655" text-anchor="middle" class="svg-ultra" font-size="56" fill="#FFF8EC">Just Jonah</text>
+
+              <!-- ground floor -->
+              <rect x="90" y="679" width="820" height="321" fill="#F4C3B8"/>
+              <rect x="100" y="679" width="40" height="321" fill="#FFF4E2"/>
+              <rect x="860" y="679" width="40" height="321" fill="#FFF4E2"/>
+              <rect x="96" y="679" width="48" height="14" fill="#E3D3B8"/>
+              <rect x="856" y="679" width="48" height="14" fill="#E3D3B8"/>
+
+              <!-- left window: toys & games -->
+              <rect x="150" y="690" width="280" height="220" fill="#FFF4E2"/>
+              <rect x="162" y="702" width="256" height="196" fill="url(#glass)"/>
+              <rect x="162" y="702" width="256" height="196" fill="url(#windowGlow)"/>
+              <g clip-path="url(#clipLeft)">
+                <text x="290" y="728" text-anchor="middle" class="svg-ultra" font-size="17" fill="#F2C94C">Toys &amp; games</text>
+                <rect x="162" y="806" width="256" height="6" fill="#C98B55"/>
+                <rect x="162" y="892" width="256" height="6" fill="#C98B55"/>
+                <a href="#shelves" class="window-item" style="--r:-3deg"><image href="../assets/products/tile-tonies.jpg" x="176" y="736" width="70" height="70" clip-path="inset(0 round 6px)"/></a>
+                <a href="#shelves" class="window-item" style="--r:2deg"><image href="../assets/products/tf-bumblebee.jpg" x="255" y="736" width="70" height="70" clip-path="inset(0 round 6px)"/></a>
+                <a href="#shelves" class="window-item" style="--r:-1deg"><image href="../assets/products/tile-pokemon.jpg" x="334" y="736" width="70" height="70" clip-path="inset(0 round 6px)"/></a>
+                <a href="#shelves" class="window-item" style="--r:2deg"><image href="../assets/products/tile-sylvanian.jpg" x="176" y="822" width="70" height="70" clip-path="inset(0 round 6px)"/></a>
+                <a href="#shelves" class="window-item" style="--r:-2deg"><image href="../assets/products/tile-plus-plus.jpg" x="255" y="822" width="70" height="70" clip-path="inset(0 round 6px)"/></a>
+                <a href="#shelves" class="window-item" style="--r:1deg"><image href="../assets/products/tile-aquabeads.jpg" x="334" y="822" width="70" height="70" clip-path="inset(0 round 6px)"/></a>
+                <path d="M162 702 h120 l-120 140Z" fill="#FFF" opacity=".08"/>
+                <rect class="glint" x="100" y="680" width="40" height="260" fill="#FFF" opacity=".22" transform="skewX(-20)"/>
+              </g>
+
+              <!-- right window: fahlo -->
+              <rect x="570" y="690" width="280" height="220" fill="#FFF4E2"/>
+              <rect x="582" y="702" width="256" height="196" fill="url(#glass)"/>
+              <rect x="582" y="702" width="256" height="196" fill="url(#windowGlow)"/>
+              <g clip-path="url(#clipRight)">
+                <text x="710" y="728" text-anchor="middle" class="svg-ultra" font-size="17" fill="#F2C94C">Fahlo trackers</text>
+                <rect x="582" y="806" width="256" height="6" fill="#C98B55"/>
+                <rect x="582" y="892" width="256" height="6" fill="#C98B55"/>
+                <a href="#fahlo" class="window-item" style="--r:2deg"><image href="../assets/products/pl-koala.jpg" x="596" y="736" width="70" height="70" clip-path="inset(0 round 6px)"/></a>
+                <a href="#fahlo" class="window-item" style="--r:-2deg"><image href="../assets/products/pl-penguin.jpg" x="675" y="736" width="70" height="70" clip-path="inset(0 round 6px)"/></a>
+                <a href="#fahlo" class="window-item" style="--r:1deg"><image href="../assets/products/pl-dolphin.jpg" x="754" y="736" width="70" height="70" clip-path="inset(0 round 6px)"/></a>
+                <a href="#fahlo" class="window-item" style="--r:-1deg"><image href="../assets/products/pl-lion.jpg" x="596" y="822" width="70" height="70" clip-path="inset(0 round 6px)"/></a>
+                <a href="#fahlo" class="window-item" style="--r:2deg"><image href="../assets/products/pl-sea-turtle.jpg" x="675" y="822" width="70" height="70" clip-path="inset(0 round 6px)"/></a>
+                <a href="#fahlo" class="window-item" style="--r:-2deg"><image href="../assets/products/pl-polar-bear.jpg" x="754" y="822" width="70" height="70" clip-path="inset(0 round 6px)"/></a>
+                <path d="M582 702 h120 l-120 140Z" fill="#FFF" opacity=".08"/>
+                <rect class="glint glint--late" x="520" y="680" width="40" height="260" fill="#FFF" opacity=".22" transform="skewX(-20)"/>
+              </g>
+
+              <!-- stall risers -->
+              <rect x="150" y="910" width="280" height="90" fill="#D93A2B"/>
+              <rect x="166" y="924" width="248" height="62" fill="none" stroke="#FFF4E2" stroke-width="3" opacity=".7"/>
+              <rect x="570" y="910" width="280" height="90" fill="#D93A2B"/>
+              <rect x="586" y="924" width="248" height="62" fill="none" stroke="#FFF4E2" stroke-width="3" opacity=".7"/>
+
+              <!-- door recess, fanlight, interior seen through the doorway -->
+              <rect x="438" y="679" width="124" height="321" fill="#12505A"/>
+              <path d="M450 722 a50 38 0 0 1 100 0Z" fill="#FFE7A3"/>
+              <path d="M500 722 V686 M500 722 L466 694 M500 722 L534 694" stroke="#12505A" stroke-width="4"/>
+              <rect x="450" y="722" width="100" height="278" fill="url(#lamplight)"/>
+              <g opacity=".35" fill="#B8742E">
+                <rect x="458" y="760" width="84" height="5"/><rect x="458" y="820" width="84" height="5"/><rect x="458" y="880" width="84" height="5"/>
+                <rect x="464" y="736" width="16" height="24"/><rect x="486" y="744" width="22" height="16"/><rect x="514" y="738" width="14" height="22"/>
+                <rect x="462" y="798" width="24" height="22"/><rect x="494" y="804" width="12" height="16"/><rect x="512" y="796" width="22" height="24"/>
+              </g>
+            </svg>
+
+            <!-- the door is HTML so it can swing open in 3D -->
+            <div class="doorway" aria-hidden="true">
+              <div class="door-light" data-door-light></div>
+              <div class="door" data-door>
+                <div class="door__glass"></div>
+                <div class="door__panel"></div>
+                <div class="door__panel door__panel--low"></div>
+                <span class="door__knob"></span>
+                <span class="door__letterbox"></span>
+                <div class="hang-sign" data-open-sign>
+                  <span class="hang-sign__string"></span>
+                  <span class="hang-sign__board" data-sign-text>Open</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- chalk A-board on the pavement -->
+            <svg class="aboard" viewBox="0 0 120 170" aria-hidden="true">
+              <path d="M18 168 L34 8 H86 L102 168" fill="none" stroke="#8A6A5A" stroke-width="7" stroke-linecap="round"/>
+              <rect x="30" y="18" width="60" height="108" rx="3" fill="#24323A" stroke="#C98B55" stroke-width="5"/>
+              <text x="60" y="44" text-anchor="middle" class="chalk" font-size="12">New in</text>
+              <text x="60" y="66" text-anchor="middle" class="chalk chalk--big" font-size="15">Fahlo</text>
+              <text x="60" y="84" text-anchor="middle" class="chalk chalk--big" font-size="15">plush</text>
+              <path d="M40 98 q20 10 40 0" class="chalk-line"/>
+              <text x="60" y="117" text-anchor="middle" class="chalk" font-size="10">come in!</text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="scroll-cue" data-scroll-cue aria-hidden="true">
+          <span>Scroll to step inside</span>
+          <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+
+        <div class="glow" data-glow aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ============ Shelves ============ -->
+    <section class="shelves" id="shelves">
+      <div class="container">
+        <header class="section-head">
+          <h2>Have a look around</h2>
+          <p>Everything on these shelves is in the shop in Fowey, and you can order it online too.</p>
+        </header>
+
+        <div class="unit">
+          <div class="unit__row">
+            <a class="bay" href="https://www.just-jonah.co.uk/shop/fahlo/258">
+              <div class="bay__items">
+                <img class="item item--l" style="--r:-4deg" src="../assets/products/br-whale.jpg" alt="Fahlo Wayfare bracelet, track a whale">
+                <img class="item item--m" style="--r:3deg" src="../assets/products/pl-koala.jpg" alt="Fahlo Lounge plush, track a koala">
+                <img class="item item--s" style="--r:-2deg" src="../assets/products/br-tiger.jpg" alt="Fahlo Prowl bracelet, track a tiger">
+              </div>
+              <span class="tag"><span class="tag__name">Fahlo trackers</span><span class="tag__meta">23 animals to follow</span></span>
+            </a>
+            <a class="bay" href="https://www.just-jonah.co.uk/games-puzzles">
+              <div class="bay__items">
+                <img class="item item--l" style="--r:3deg" src="../assets/products/tile-pokemon.jpg" alt="Pokémon trading cards">
+                <img class="item item--m" style="--r:-3deg" src="../assets/products/tile-putty.jpg" alt="Crazy Aaron's Thinking Putty">
+              </div>
+              <span class="tag"><span class="tag__name">Games &amp; puzzles</span><span class="tag__meta">Smart Games, Ginger Fox, Orchard</span></span>
+            </a>
+          </div>
+
+          <div class="unit__row">
+            <a class="bay" href="https://www.just-jonah.co.uk/toys">
+              <div class="bay__items">
+                <img class="item item--l" style="--r:-2deg" src="../assets/products/tile-djeco.jpg" alt="Djeco toys">
+                <img class="item item--m" style="--r:4deg" src="../assets/products/tile-plus-plus.jpg" alt="Plus-Plus building sets">
+                <img class="item item--s" style="--r:-3deg" src="../assets/products/tf-bumblebee.jpg" alt="Transformers Bumblebee figure">
+              </div>
+              <span class="tag"><span class="tag__name">Toys</span><span class="tag__meta">Djeco, Janod, Plus-Plus, Needoh</span></span>
+            </a>
+            <a class="bay" href="https://www.just-jonah.co.uk/baby-and-toddler-brands">
+              <div class="bay__items">
+                <img class="item item--l" style="--r:2deg" src="../assets/products/tile-janod.jpg" alt="Janod wooden toys">
+                <img class="item item--m" style="--r:-3deg" src="../assets/products/tile-green-toys.jpg" alt="Green Toys dumper truck">
+                <img class="item item--s" style="--r:3deg" src="../assets/products/tile-bigjigs.jpg" alt="BigJigs wooden train">
+              </div>
+              <span class="tag"><span class="tag__name">Baby &amp; toddler</span><span class="tag__meta">Steiff, Little Dutch, BigJigs</span></span>
+            </a>
+          </div>
+
+          <div class="unit__row">
+            <a class="bay" href="https://www.just-jonah.co.uk/featured">
+              <div class="bay__items">
+                <img class="item item--l" style="--r:-3deg" src="../assets/products/tile-sylvanian.jpg" alt="Sylvanian Families">
+                <img class="item item--m" style="--r:2deg" src="../assets/products/tile-tonies.jpg" alt="Toniebox 2">
+                <img class="item item--s" style="--r:-2deg" src="../assets/products/tf-optimus.jpg" alt="Transformers Optimus Prime figure">
+              </div>
+              <span class="tag"><span class="tag__name">Featured brands</span><span class="tag__meta">Sylvanian Families, Tonies, Transformers</span></span>
+            </a>
+            <a class="bay" href="https://www.just-jonah.co.uk/shop/all-clothing/154">
+              <div class="bay__items bay__items--clothes" aria-hidden="true">
+                <svg class="folded" viewBox="0 0 220 142">
+                  <g transform="translate(16 96)"><rect width="188" height="44" rx="7" fill="#FFF8EC"/><rect y="12" width="188" height="6" fill="#12505A"/><rect y="26" width="188" height="6" fill="#12505A"/><path d="M74 0 q20 14 40 0" fill="none" stroke="#12505A" stroke-width="4"/></g>
+                  <g transform="translate(28 55)"><rect width="164" height="43" rx="7" fill="#F4C3B8"/><path d="M62 0 q20 16 40 0" fill="none" stroke="#D93A2B" stroke-width="4"/><circle cx="40" cy="24" r="6" fill="#F2C94C"/><circle cx="124" cy="22" r="5" fill="#FFF8EC"/></g>
+                  <g transform="translate(40 14)"><rect width="140" height="43" rx="7" fill="#D93A2B"/><rect y="9" width="140" height="5" fill="#FFF8EC"/><rect y="21" width="140" height="5" fill="#FFF8EC"/><rect y="33" width="140" height="5" fill="#FFF8EC"/><path d="M50 0 q20 14 40 0" fill="#B92E21"/></g>
+                </svg>
+              </div>
+              <span class="tag"><span class="tag__name">Kids' clothing</span><span class="tag__meta">Frugi, Toby Tiger, Piccalilly</span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Fahlo ============ -->
+    <section class="fahlo" id="fahlo">
+      <div class="container fahlo__grid">
+        <div class="fahlo__intro">
+          <h2>Take home a wild friend</h2>
+          <p>Every Fahlo bracelet and plush comes with a real animal to follow in the Fahlo app. Pick a whale, a wolf or a sea turtle and see where it travels.</p>
+          <ol class="steps">
+            <li><span class="steps__n">1</span>Choose an animal</li>
+            <li><span class="steps__n">2</span>Scan its tracking card in the app</li>
+            <li><span class="steps__n">3</span>Follow its journey</li>
+          </ol>
+          <div class="toggle" role="radiogroup" aria-label="Show">
+            <button type="button" role="radio" aria-checked="true" data-range="bracelet">Bracelets</button>
+            <button type="button" role="radio" aria-checked="false" data-range="plush">Plush</button>
+            <span class="toggle__thumb" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div class="rail-wrap">
+          <div class="rail" data-rail tabindex="0" aria-label="Fahlo animals"></div>
+          <div class="rail-nav">
+            <button type="button" class="round-btn" data-rail-prev aria-label="Previous animals"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+            <button type="button" class="round-btn" data-rail-next aria-label="Next animals"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Visit ============ -->
+    <section class="visit" id="visit">
+      <div class="container visit__grid">
+        <div class="visit__info">
+          <h2>Come and find us</h2>
+          <address>
+            Just Jonah<br>
+            36A Fore Street<br>
+            Fowey, Cornwall PL23 1AQ
+          </address>
+
+          <div class="big-sign" data-open-sign>
+            <span class="hang-sign__string"></span>
+            <span class="big-sign__board" data-sign-text>Open</span>
+          </div>
+          <p class="visit__status" data-open-detail>Open every day, 10am to 5:30pm</p>
+
+          <table class="hours" aria-label="Opening hours">
+            <tbody data-hours></tbody>
+          </table>
+
+          <div class="visit__ctas">
+            <a class="btn btn--yellow" href="https://www.google.com/maps/dir/?api=1&amp;destination=Just+Jonah+36A+Fore+Street+Fowey+PL23+1AQ" target="_blank" rel="noopener">Get directions</a>
+            <a class="btn btn--line" href="tel:01726458369">Call 01726 458369</a>
+          </div>
+        </div>
+
+        <figure class="map" aria-label="Illustrated map of Fowey showing Just Jonah on Fore Street">
+          <svg viewBox="0 0 560 520">
+            <rect width="560" height="520" rx="28" fill="#E7F1EC"/>
+            <path d="M0 0 H300 C 250 120 300 250 230 330 S 120 470 0 500Z" fill="#D5E8D8"/>
+            <path d="M600 160 C 500 200 470 300 520 380 S 600 470 600 520Z" fill="#D5E8D8"/>
+            <!-- river fowey estuary -->
+            <path d="M330 0 C 300 80 360 140 330 210 S 250 330 300 420 S 380 500 360 520 L 560 520 L 560 0Z" fill="#9FD0DE"/>
+            <path d="M330 0 C 300 80 360 140 330 210 S 250 330 300 420 S 380 500 360 520" fill="none" stroke="#7BB8CB" stroke-width="3"/>
+            <path d="M560 250 C 520 240 470 270 450 320 S 470 420 560 440Z" fill="#E7F1EC"/>
+            <path d="M560 250 C 520 240 470 270 450 320 S 470 420 560 440" fill="none" stroke="#7BB8CB" stroke-width="3"/>
+            <path class="waves" d="M390 110 q10 -6 20 0 t20 0 M380 250 q10 -6 20 0 t20 0 M400 470 q10 -6 20 0 t20 0" fill="none" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
+            <!-- moored boats -->
+            <g fill="#FFF"><path d="M370 160 h22 l-4 7 h-14Z"/><path d="M400 186 h18 l-3 6 h-12Z"/><path d="M360 340 h22 l-4 7 h-14Z"/><path d="M392 360 h18 l-3 6 h-12Z"/></g>
+            <!-- ferry route -->
+            <path d="M312 448 C 360 440 420 410 468 384" fill="none" stroke="#D93A2B" stroke-width="2.5" stroke-dasharray="2 8" stroke-linecap="round"/>
+            <!-- streets of fowey -->
+            <g fill="none" stroke="#FFF" stroke-linecap="round">
+              <path d="M300 40 C 280 120 300 190 290 250 S 250 360 270 440" stroke-width="16"/>
+              <path d="M120 120 C 180 160 240 180 296 200" stroke-width="10"/>
+              <path d="M60 330 C 130 320 210 300 282 296" stroke-width="10"/>
+              <path d="M150 460 C 190 430 230 418 274 424" stroke-width="10"/>
+            </g>
+            <g fill="#F4C3B8"><rect x="230" y="122" width="30" height="24" rx="4"/><rect x="214" y="226" width="34" height="26" rx="4"/><rect x="196" y="350" width="30" height="24" rx="4"/><rect x="238" y="372" width="24" height="22" rx="4"/><rect x="120" y="64" width="28" height="22" rx="4"/></g>
+            <g fill="#FFF4E2"><rect x="160" y="186" width="32" height="26" rx="4"/><rect x="104" y="250" width="28" height="22" rx="4"/><rect x="226" y="262" width="26" height="22" rx="4"/><rect x="60" y="380" width="30" height="22" rx="4"/></g>
+            <g fill="#A9D3E3"><rect x="170" y="392" width="28" height="22" rx="4"/><rect x="240" y="62" width="28" height="22" rx="4"/><rect x="100" y="420" width="24" height="20" rx="4"/></g>
+            <!-- polruan opposite -->
+            <g fill="#F2C94C"><rect x="482" y="292" width="26" height="22" rx="4"/><rect x="512" y="324" width="30" height="24" rx="4"/><rect x="476" y="346" width="24" height="20" rx="4"/></g>
+            <!-- ferry -->
+            <g class="ferry"><rect x="-14" y="-6" width="28" height="12" rx="4" fill="#D93A2B"/><rect x="-6" y="-12" width="12" height="7" rx="2" fill="#FFF"/></g>
+            <text x="404" y="40" class="map-label" fill="#2C6E80">River Fowey</text>
+            <text x="470" y="276" class="map-label">Polruan</text>
+            <text x="40" y="40" class="map-label">Fowey</text>
+            <text x="250" y="478" class="map-label map-label--small">Town Quay</text>
+            <text x="380" y="432" class="map-label map-label--small">Polruan ferry</text>
+            <!-- pin -->
+            <g class="pin" transform="translate(292 262)">
+              <circle class="pin__pulse" r="18" fill="#D93A2B" opacity=".25"/>
+              <path d="M0 0 C -18 -20 -22 -30 -22 -40 a22 22 0 0 1 44 0 c0 10 -4 20 -22 40Z" fill="#D93A2B" stroke="#FFF" stroke-width="3"/>
+              <circle cy="-40" r="8" fill="#FFF"/>
+            </g>
+            <g transform="translate(60 150)">
+              <path d="M150 54 L196 98 L176 54Z" fill="#12505A"/>
+              <rect width="196" height="54" rx="12" fill="#12505A"/>
+              <text x="16" y="24" class="map-callout">Just Jonah</text>
+              <text x="16" y="42" class="map-callout map-callout--small">36A Fore Street</text>
+            </g>
+          </svg>
+          <figcaption class="sr-only">Just Jonah is on Fore Street in the middle of Fowey, near the Town Quay and the Polruan ferry.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ Delivery ============ -->
+    <section class="delivery" id="delivery">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <h2>Not in Cornwall? We post every day.</h2>
+          <p>Orders go out from Fowey once a day. Anything that arrives late in the day goes out the next morning.</p>
+        </header>
+        <ul class="stamps">
+          <li class="stamp">
+            <span class="stamp__price">£4.20</span>
+            <span class="stamp__name">Royal Mail Tracked 48</span>
+            <span class="stamp__note">Most orders</span>
+          </li>
+          <li class="stamp stamp--red">
+            <span class="stamp__price">£4.99</span>
+            <span class="stamp__name">Royal Mail Tracked 24</span>
+            <span class="stamp__note">A little quicker</span>
+          </li>
+          <li class="stamp stamp--teal">
+            <span class="stamp__price">£9.45</span>
+            <span class="stamp__name">Special Delivery by 1pm</span>
+            <span class="stamp__note">Order by 4pm, weekdays</span>
+          </li>
+        </ul>
+        <p class="delivery__more">Sending abroad? <a href="https://www.just-jonah.co.uk/contact-us">Message us for a postage price</a>. Read our <a href="https://www.just-jonah.co.uk/delivery-and-returns">delivery and returns policy</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ Newsletter ============ -->
+    <section class="loop">
+      <div class="container loop__inner">
+        <div>
+          <h2>Stay in the loop</h2>
+          <p>News, offers and competitions from the shop. One or two emails a week, never more.</p>
+        </div>
+        <form class="loop__form" data-signup novalidate>
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="Your email address" autocomplete="email" required>
+          <button class="btn btn--red" type="submit">Sign up</button>
+          <p class="loop__msg" data-signup-msg role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="wordmark wordmark--footer" href="#top"><span class="wordmark__text" data-shade="Just Jonah">Just Jonah</span></a>
+        <p>36A Fore Street, Fowey PL23 1AQ<br>
+          <a href="tel:01726458369">01726 458369</a><br>
+          <a href="mailto:contact@just-jonah.co.uk">contact@just-jonah.co.uk</a></p>
+      </div>
+      <nav aria-label="Shop">
+        <h3>Shop</h3>
+        <a href="https://www.just-jonah.co.uk/shop/fahlo/258">Fahlo bracelets</a>
+        <a href="https://www.just-jonah.co.uk/shop/fahlo-plush/X3LX6RVU7JCOZQZY5TNJDN47">Fahlo plush</a>
+        <a href="https://www.just-jonah.co.uk/games-puzzles">Games &amp; puzzles</a>
+        <a href="https://www.just-jonah.co.uk/toys">Toys</a>
+        <a href="https://squareup.com/gift/HEW9SERP53TC3/order">Gift cards</a>
+      </nav>
+      <nav aria-label="Help">
+        <h3>Help</h3>
+        <a href="https://www.just-jonah.co.uk/delivery-and-returns">Delivery and returns</a>
+        <a href="https://www.just-jonah.co.uk/contact-us">Contact us</a>
+        <a href="https://www.just-jonah.co.uk/privacy-policy">Privacy policy</a>
+        <a href="https://www.just-jonah.co.uk/cookie-policy">Cookie policy</a>
+      </nav>
+      <nav aria-label="Social">
+        <h3>Follow the shop</h3>
+        <a href="https://www.instagram.com/justjonahltd">Instagram</a>
+        <a href="https://www.facebook.com/justjonahltd">Facebook</a>
+        <a href="https://www.tiktok.com/@justjonahltd">TikTok</a>
+        <a href="https://www.youtube.com/@justjonahfowey">YouTube</a>
+      </nav>
+    </div>
+    <div class="container footer__legal">
+      <p>Just Jonah Ltd. Registered in England and Wales, 11067255. VAT number 391 9479 43.</p>
+      <p>&copy; <span data-year>2026</span> Just Jonah</p>
+    </div>
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="../assets/fahlo.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Just Jonah | Come and play in Fowey</title>
+  <meta name="description" content="The toy shop on Fore Street, Fowey. Toys, games, puzzles, Fahlo animal trackers and kids' clothing. Open every day, and online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fredoka:wdth,wght@75..125,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="Just Jonah home">Just Jonah</a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#box">Shop</a>
+      <a href="#fahlo">Fahlo</a>
+      <a href="#visit">Visit us</a>
+      <a href="#delivery">Delivery</a>
+    </nav>
+    <div class="header__actions">
+      <button class="basket" type="button" aria-label="Basket, 0 items" data-basket>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+        <span class="basket__count" data-basket-count>0</span>
+      </button>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" data-menu>
+        <span></span><span></span><span class="sr-only">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Hero: the toybox ============ -->
+    <section class="hero" data-hero>
+      <div class="hero__copy" data-solid>
+        <p class="status" data-open-pill>
+          <span class="status__dot" aria-hidden="true"></span>
+          <span data-open-text>Open every day, 10am to 5:30pm</span>
+        </p>
+        <h1 class="hero__title" data-bounce>Come and play.</h1>
+        <p class="hero__lede">Just Jonah is the toy shop on Fore Street in Fowey. Toys, games, puzzles, Fahlo animal trackers and kids' clothes. Open every day, and online.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--sun" href="#box">Shop toys</a>
+          <a class="btn btn--white" href="#visit">Find the shop</a>
+        </div>
+      </div>
+
+      <div class="chest" data-chest aria-hidden="true">
+        <div class="chest__lid"></div>
+        <div class="chest__front"><span>Just Jonah</span></div>
+      </div>
+      <div class="playground" data-playground aria-hidden="true"></div>
+
+      <div class="hero__tools">
+        <p class="hero__hint" data-hint>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V12m0-1.5v-2a1.5 1.5 0 0 1 3 0V12m0-1v-.5a1.5 1.5 0 0 1 3 0V12m0 0a1.5 1.5 0 0 1 3 0v3a6 6 0 0 1-6 6h-1.2a6 6 0 0 1-4.8-2.4L4.6 15.5a1.6 1.6 0 0 1 2.4-2.1L8 14.5"/></svg>
+          Go on, grab a block and throw it
+        </p>
+        <button class="btn btn--ghost btn--sm" type="button" data-tip>Tip the box out again</button>
+      </div>
+    </section>
+
+    <!-- ============ What's in the box ============ -->
+    <section class="box" id="box" aria-labelledby="box-title">
+      <div class="container">
+        <header class="head">
+          <h2 id="box-title" class="h2">What's in the box</h2>
+          <p>Six shelves' worth of toys, games and clothes, all in the shop in Fowey and online.</p>
+        </header>
+        <div class="cards">
+          <a class="card card--white" href="https://www.just-jonah.co.uk/shop/fahlo/258">
+            <span class="card__pic"><img src="../assets/products/pl-koala.jpg" alt="" loading="lazy"></span>
+            <span class="card__name">Fahlo trackers</span>
+            <span class="card__meta">Bracelets and plush with a real animal to follow</span>
+          </a>
+          <a class="card card--tomato" href="https://www.just-jonah.co.uk/games-puzzles">
+            <span class="card__pic"><img src="../assets/products/tile-pokemon.jpg" alt="" loading="lazy"></span>
+            <span class="card__name">Games &amp; puzzles</span>
+            <span class="card__meta">Pokémon cards, Smart Games, Ginger Fox</span>
+          </a>
+          <a class="card card--mint" href="https://www.just-jonah.co.uk/toys">
+            <span class="card__pic"><img src="../assets/products/tile-djeco.jpg" alt="" loading="lazy"></span>
+            <span class="card__name">Toys</span>
+            <span class="card__meta">Djeco, Janod, Plus-Plus, Needoh</span>
+          </a>
+          <a class="card card--bubble" href="https://www.just-jonah.co.uk/baby-and-toddler-brands">
+            <span class="card__pic"><img src="../assets/products/tile-janod.jpg" alt="" loading="lazy"></span>
+            <span class="card__name">Baby &amp; toddler</span>
+            <span class="card__meta">Steiff, Little Dutch, BigJigs</span>
+          </a>
+          <a class="card card--cobalt" href="https://www.just-jonah.co.uk/featured">
+            <span class="card__pic"><img src="../assets/products/tile-sylvanian.jpg" alt="" loading="lazy"></span>
+            <span class="card__name">Featured brands</span>
+            <span class="card__meta">Sylvanian Families, Tonies, Transformers</span>
+          </a>
+          <a class="card card--ink" href="https://www.just-jonah.co.uk/shop/all-clothing/154">
+            <span class="card__pic card__pic--clothes" aria-hidden="true">
+              <svg viewBox="0 0 120 90"><path d="M38 10 22 18 10 36l14 8 6-8v44h60V36l6 8 14-8-12-18-16-8c-2 8-10 12-22 12S40 18 38 10Z" fill="#FF8EBD" stroke="#1F1A3D" stroke-width="4" stroke-linejoin="round"/><path d="M30 50h60M30 64h60" stroke="#FFFFFF" stroke-width="6"/></svg>
+            </span>
+            <span class="card__name">Kids' clothing</span>
+            <span class="card__meta">Frugi, Toby Tiger, Piccalilly</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Fahlo capsule machine ============ -->
+    <section class="fahlo" id="fahlo" aria-labelledby="fahlo-title">
+      <div class="container fahlo__grid">
+        <div class="fahlo__copy">
+          <h2 id="fahlo-title" class="h2">Can't pick an animal? Turn the handle.</h2>
+          <p>Every Fahlo bracelet comes with a real animal to follow in the Fahlo app. Bracelets are <strong>£13.95</strong>. Let the machine choose, or pick one yourself below.</p>
+          <button class="btn btn--tomato btn--big" type="button" data-turn>Turn the handle</button>
+        </div>
+
+        <div class="machine-wrap">
+          <svg class="machine" viewBox="0 0 360 540" aria-hidden="true">
+            <defs>
+              <clipPath id="dome"><circle cx="180" cy="178" r="132"/></clipPath>
+            </defs>
+            <rect x="96" y="22" width="168" height="34" rx="14" fill="#F2542D" stroke="#1F1A3D" stroke-width="6"/>
+            <circle cx="180" cy="178" r="138" fill="#DCE6FF" stroke="#1F1A3D" stroke-width="6"/>
+            <g clip-path="url(#dome)" data-capsules></g>
+            <path d="M92 96 a120 120 0 0 1 60 -40" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".8"/>
+            <path d="M70 300 h220 l22 200 H48Z" fill="#F2542D" stroke="#1F1A3D" stroke-width="6" stroke-linejoin="round"/>
+            <rect x="64" y="292" width="232" height="26" rx="10" fill="#FFC933" stroke="#1F1A3D" stroke-width="6"/>
+            <rect x="118" y="346" width="124" height="40" rx="10" fill="#fff" stroke="#1F1A3D" stroke-width="5"/>
+            <text x="180" y="374" text-anchor="middle" class="machine__label">Fahlo</text>
+            <g class="machine__handle" data-handle>
+              <circle cx="180" cy="430" r="36" fill="#FFC933" stroke="#1F1A3D" stroke-width="6"/>
+              <rect x="170" y="400" width="20" height="60" rx="8" fill="#fff" stroke="#1F1A3D" stroke-width="5"/>
+            </g>
+            <rect x="240" y="444" width="52" height="40" rx="8" fill="#1F1A3D"/>
+            <rect x="36" y="496" width="288" height="32" rx="12" fill="#1F1A3D"/>
+          </svg>
+          <div class="capsule" data-capsule aria-hidden="true">
+            <span class="capsule__top"></span><span class="capsule__bottom"></span>
+          </div>
+
+          <article class="reveal is-empty" data-reveal aria-live="polite">
+            <p class="reveal__empty">Your animal pops out here</p>
+            <img class="reveal__img" alt="" data-r-img>
+            <div class="reveal__body">
+              <h3 class="reveal__name" data-r-name></h3>
+              <p class="reveal__model" data-r-model></p>
+              <div class="reveal__row">
+                <span class="reveal__price" data-r-price></span>
+                <button class="btn btn--sun btn--sm" type="button" data-add data-r-add>Add to basket</button>
+              </div>
+              <a class="reveal__plush" data-r-plush hidden>There's a plush version too</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="container">
+        <h3 class="pick__title">Or pick one yourself</h3>
+        <ul class="pick" data-pick></ul>
+      </div>
+    </section>
+
+    <!-- ============ Visit: board game week ============ -->
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+      <div class="container">
+        <div class="visit__top">
+          <div>
+            <h2 id="visit-title" class="h2">Come and play in Fowey</h2>
+            <p class="visit__lede">You'll find us at 36A Fore Street, Fowey, Cornwall PL23 1AQ.</p>
+          </div>
+          <p class="visit__live" data-open-pill>
+            <span class="status__dot" aria-hidden="true"></span>
+            <span data-open-text>Open every day</span>
+          </p>
+        </div>
+
+        <div class="board" data-board>
+          <ol class="board__track" aria-label="Opening hours">
+            <li class="sq" data-day="Monday"><span class="sq__day">Mon</span><span class="sq__time">10am &ndash; 5:30pm</span></li>
+            <li class="sq" data-day="Tuesday"><span class="sq__day">Tue</span><span class="sq__time">10am &ndash; 5:30pm</span></li>
+            <li class="sq" data-day="Wednesday"><span class="sq__day">Wed</span><span class="sq__time">10am &ndash; 5:30pm</span></li>
+            <li class="sq" data-day="Thursday"><span class="sq__day">Thu</span><span class="sq__time">10am &ndash; 5:30pm</span></li>
+            <li class="sq" data-day="Friday"><span class="sq__day">Fri</span><span class="sq__time">10am &ndash; 5:30pm</span></li>
+            <li class="sq" data-day="Saturday"><span class="sq__day">Sat</span><span class="sq__time">10am &ndash; 5:30pm</span></li>
+            <li class="sq" data-day="Sunday"><span class="sq__day">Sun</span><span class="sq__time">10am &ndash; 5:30pm</span></li>
+          </ol>
+          <svg class="pawn" data-pawn viewBox="0 0 60 80" aria-hidden="true">
+            <ellipse cx="30" cy="74" rx="24" ry="6" fill="#000" opacity=".25"/>
+            <path d="M30 6a12 12 0 0 1 7 21.7c3 1.6 5 4.3 5 7.3h-6l4 22h8a4 4 0 0 1 4 4v8H8v-8a4 4 0 0 1 4-4h8l4-22h-6c0-3 2-5.7 5-7.3A12 12 0 0 1 30 6Z" fill="#FFC933" stroke="#1F1A3D" stroke-width="4" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <div class="visit__ctas">
+          <a class="btn btn--sun" href="https://www.google.com/maps/dir/?api=1&amp;destination=Just+Jonah+36A+Fore+Street+Fowey+PL23+1AQ" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn--outline" href="tel:01726458369">Call 01726 458369</a>
+          <a class="btn btn--outline" href="mailto:contact@just-jonah.co.uk">Email the shop</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Delivery ============ -->
+    <section class="delivery" id="delivery" aria-labelledby="delivery-title">
+      <div class="container">
+        <header class="head head--center">
+          <h2 id="delivery-title" class="h2">We post every day</h2>
+          <p>Orders leave Fowey once a day. Anything that comes in late goes out the next morning.</p>
+        </header>
+        <ul class="stickers">
+          <li class="sticker sticker--sun"><span class="sticker__price">£4.20</span><span class="sticker__name">Royal Mail Tracked 48</span></li>
+          <li class="sticker sticker--mint"><span class="sticker__price">£4.99</span><span class="sticker__name">Royal Mail Tracked 24</span></li>
+          <li class="sticker sticker--cobalt"><span class="sticker__price">£9.45</span><span class="sticker__name">Special Delivery by 1pm, order by 4pm on weekdays</span></li>
+        </ul>
+        <p class="delivery__note">Sending abroad? <a href="https://www.just-jonah.co.uk/contact-us">Message us for a postage price</a>. Read the <a href="https://www.just-jonah.co.uk/delivery-and-returns">delivery and returns policy</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ Newsletter ============ -->
+    <section class="loop" aria-labelledby="loop-title">
+      <div class="container loop__inner">
+        <div>
+          <h2 id="loop-title" class="h2">Stay in the loop</h2>
+          <p>News, offers and competitions from the shop. One or two emails a week, never more.</p>
+        </div>
+        <form class="loop__form" data-signup novalidate>
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="Your email address" autocomplete="email" required>
+          <button class="btn btn--tomato" type="submit">Sign up</button>
+          <p class="loop__msg" data-signup-msg role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="wordmark wordmark--footer" href="#top">Just Jonah</a>
+        <p>36A Fore Street, Fowey PL23 1AQ<br><a href="tel:01726458369">01726 458369</a><br><a href="mailto:contact@just-jonah.co.uk">contact@just-jonah.co.uk</a></p>
+      </div>
+      <nav aria-label="Shop">
+        <h3>Shop</h3>
+        <a href="https://www.just-jonah.co.uk/shop/fahlo/258">Fahlo bracelets</a>
+        <a href="https://www.just-jonah.co.uk/shop/fahlo-plush/X3LX6RVU7JCOZQZY5TNJDN47">Fahlo plush</a>
+        <a href="https://www.just-jonah.co.uk/games-puzzles">Games &amp; puzzles</a>
+        <a href="https://www.just-jonah.co.uk/toys">Toys</a>
+        <a href="https://squareup.com/gift/HEW9SERP53TC3/order">Gift cards</a>
+      </nav>
+      <nav aria-label="Help">
+        <h3>Help</h3>
+        <a href="https://www.just-jonah.co.uk/delivery-and-returns">Delivery and returns</a>
+        <a href="https://www.just-jonah.co.uk/contact-us">Contact us</a>
+        <a href="https://www.just-jonah.co.uk/privacy-policy">Privacy policy</a>
+        <a href="https://www.just-jonah.co.uk/cookie-policy">Cookie policy</a>
+      </nav>
+      <nav aria-label="Social">
+        <h3>Follow the shop</h3>
+        <a href="https://www.instagram.com/justjonahltd">Instagram</a>
+        <a href="https://www.facebook.com/justjonahltd">Facebook</a>
+        <a href="https://www.tiktok.com/@justjonahltd">TikTok</a>
+        <a href="https://www.youtube.com/@justjonahfowey">YouTube</a>
+      </nav>
+    </div>
+    <div class="container footer__legal">
+      <p>Just Jonah Ltd. Registered in England and Wales, 11067255. VAT number 391 9479 43.</p>
+      <p>&copy; <span data-year>2026</span> Just Jonah</p>
+    </div>
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="../assets/fahlo.js"></script>
+  <script src="physics.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Just Jonah | Two homepage concepts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fredoka:wght@500;600&family=Hanken+Grotesk:wght@400;600&family=Ultra&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; font: 17px/1.55 "Hanken Grotesk", system-ui, sans-serif; background: #12505A; }
+    .split { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; }
+    .concept {
+      position: relative; display: flex; flex-direction: column; justify-content: center; gap: 28px;
+      padding: clamp(40px, 6vw, 88px) clamp(20px, 5vw, 72px);
+      text-decoration: none; overflow: hidden;
+    }
+    .concept--a { background: linear-gradient(#BFE2F0, #E9F6F8); color: #173B45; }
+    .concept--b {
+      color: #fff;
+      background:
+        radial-gradient(circle at 50% 46%, rgba(255, 255, 255, .13) 0 6px, transparent 6.5px) 0 0 / 38px 38px,
+        radial-gradient(circle at 50% 54%, rgba(10, 20, 90, .22) 0 7px, transparent 7.5px) 0 0 / 38px 38px,
+        #2B4BDB;
+    }
+    .concept__letter { font-size: 15px; font-weight: 600; opacity: .7; }
+    .concept--a h2 { margin: 6px 0 0; font: 400 clamp(2.2rem, 4.4vw, 3.8rem)/1.02 "Ultra", Georgia, serif; color: #12505A; text-shadow: .05em .05em 0 #FFF8EC; }
+    .concept--b h2 { margin: 6px 0 0; font: 400 clamp(2.4rem, 4.8vw, 4.2rem)/.98 "Bagel Fat One", sans-serif; text-shadow: 0 .06em 0 #1F1A3D; }
+    .concept p { margin: 12px 0 0; max-width: 30rem; }
+    .concept--b p { color: #E8ECFF; font-family: "Fredoka", sans-serif; font-weight: 500; }
+    .shot {
+      width: 100%; border-radius: 14px; overflow: hidden;
+      box-shadow: 0 30px 60px -28px rgba(0, 0, 0, .55), 0 0 0 1px rgba(0, 0, 0, .06);
+      transition: transform .6s cubic-bezier(.2, .8, .2, 1);
+    }
+    .shot img { display: block; width: 100%; height: auto; }
+    .concept:hover .shot { transform: translateY(-8px) rotate(-.6deg); }
+    .open {
+      align-self: flex-start; display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px;
+      border-radius: 999px; font-weight: 600;
+    }
+    .concept--a .open { background: #D93A2B; color: #fff; box-shadow: 0 4px 0 #B92E21; }
+    .concept--b .open { background: #FFC933; color: #1F1A3D; border: 3px solid #1F1A3D; border-radius: 16px; box-shadow: 0 5px 0 #1F1A3D; font-family: "Fredoka", sans-serif; font-weight: 600; }
+    .concept:focus-visible { outline: 4px solid #FFC93C; outline-offset: -8px; }
+    @media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+    @media (prefers-reduced-motion: reduce) { .shot { transition: none; } }
+  </style>
+</head>
+<body>
+  <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Just Jonah: two homepage concepts</h1>
+  <main class="split">
+    <a class="concept concept--a" href="harbour/">
+      <div>
+        <span class="concept__letter">Concept A</span>
+        <h2>The shop on Fore Street</h2>
+        <p>Led by Fowey. An illustrated shopfront with real toys in the window. Scroll, and the door swings open into the shop.</p>
+      </div>
+      <div class="shot"><img src="assets/previews/harbour.jpg" alt="Concept A homepage: an illustrated pink shopfront with the Just Jonah sign on Fore Street"></div>
+      <span class="open">Open concept A</span>
+    </a>
+    <a class="concept concept--b" href="toybox/">
+      <div>
+        <span class="concept__letter">Concept B</span>
+        <h2>The toybox</h2>
+        <p>Pure play. Alphabet blocks spelling Just Jonah tumble into a toy chest, and you can grab and throw them. Fahlo comes out of a capsule machine.</p>
+      </div>
+      <div class="shot"><img src="assets/previews/toybox.jpg" alt="Concept B homepage: a blue page with letter blocks and toys spilling out of a red toy chest"></div>
+      <span class="open">Open concept B</span>
+    </a>
+  </main>
+</body>
+</html>

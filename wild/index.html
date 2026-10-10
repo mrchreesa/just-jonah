@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Just Jonah | Track a real animal with Fahlo</title>
+  <meta name="description" content="Fahlo animal-tracking bracelets and plush, plus games, puzzles, toys and kids' clothing. Just Jonah, 36A Fore Street, Fowey, and online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="Just Jonah home">
+      Just Jonah<span class="wordmark__ping" aria-hidden="true"></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#animals">Fahlo animals</a>
+      <a href="#shop">Shop</a>
+      <a href="#visit">Visit Fowey</a>
+      <a href="#delivery">Delivery</a>
+    </nav>
+    <div class="header__actions">
+      <button class="basket" type="button" aria-label="Basket, 0 items" data-basket>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+        <span class="basket__count" data-basket-count>0</span>
+      </button>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" data-menu>
+        <span></span><span></span><span class="sr-only">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Hero: the globe ============ -->
+    <section class="hero">
+      <div class="hero__copy">
+        <h1 class="hero__title" data-stretch>
+          <span class="line"><span class="w">Pick</span> <span class="w">an</span> <span class="w">animal.</span></span>
+          <span class="line"><span class="w">Follow</span> <span class="w">it</span> <span class="w">for</span> <span class="w">real.</span></span>
+        </h1>
+        <p class="hero__lede">Every Fahlo bracelet and plush comes with a real tagged animal you can follow in the Fahlo app. Choose yours in our Fowey shop or online.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--tag" href="#animals">Choose your animal</a>
+          <a class="btn btn--line" href="#shop">Shop all toys</a>
+        </div>
+        <p class="hero__count"><strong data-animal-count>23</strong> animals to follow, from a whale shark to a red panda</p>
+      </div>
+
+      <div class="globe-wrap" data-globe-wrap>
+        <div class="globe" data-globe>
+          <canvas data-globe-canvas aria-hidden="true"></canvas>
+          <div class="pins" data-pins aria-hidden="true"></div>
+        </div>
+        <p class="globe-hint" data-globe-hint>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 12h8M5 9l-3 3 3 3M19 9l3 3-3 3"/></svg>
+          Drag to spin. Tap an animal to meet it.
+        </p>
+
+        <aside class="field-card" data-field-card hidden aria-live="polite">
+          <button class="field-card__close" type="button" aria-label="Close" data-field-close>
+            <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+          <img class="field-card__img" alt="" data-fc-img>
+          <div class="field-card__body">
+            <p class="field-card__habitat" data-fc-habitat></p>
+            <h2 class="field-card__name" data-fc-name></h2>
+            <p class="field-card__model" data-fc-model></p>
+            <p class="field-card__distance" data-fc-distance></p>
+            <div class="field-card__row">
+              <span class="field-card__price" data-fc-price></span>
+              <button class="btn btn--tag btn--sm" type="button" data-add data-fc-add>Add to basket</button>
+            </div>
+            <a class="field-card__plush" data-fc-plush hidden>See the plush version</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ How it works ============ -->
+    <section class="how" aria-labelledby="how-title">
+      <div class="container">
+        <h2 id="how-title" class="sr-only">How Fahlo tracking works</h2>
+        <svg class="how__trail" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <mask id="trail-reveal" maskUnits="userSpaceOnUse" x="0" y="-40" width="1200" height="200">
+              <path data-trail-mask d="M40 80 C 200 10 320 110 460 60 S 720 0 820 70 S 1060 110 1160 40" fill="none" stroke="#fff" stroke-width="14"/>
+            </mask>
+          </defs>
+          <path class="how__dots" mask="url(#trail-reveal)" d="M40 80 C 200 10 320 110 460 60 S 720 0 820 70 S 1060 110 1160 40"/>
+        </svg>
+        <ol class="how__steps">
+          <li>
+            <span class="how__n">1</span>
+            <h3>Choose an animal</h3>
+            <p>Each bracelet and plush is linked to a real animal in the wild.</p>
+          </li>
+          <li>
+            <span class="how__n">2</span>
+            <h3>Scan its card</h3>
+            <p>Every one comes with a tracking card. Scan it in the Fahlo app.</p>
+          </li>
+          <li>
+            <span class="how__n">3</span>
+            <h3>Follow its journey</h3>
+            <p>See where your whale, wolf or sea turtle goes as it travels.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ Choose your animal ============ -->
+    <section class="animals" id="animals" aria-labelledby="animals-title">
+      <div class="container">
+        <div class="animals__head">
+          <h2 id="animals-title" class="h2">Choose your animal</h2>
+          <p>Bracelets are <strong>£13.95</strong>. Filter by where the animal lives.</p>
+        </div>
+        <div class="chips" role="group" aria-label="Filter by habitat" data-chips></div>
+        <ul class="grid" data-grid></ul>
+      </div>
+    </section>
+
+    <!-- ============ Rest of the shop ============ -->
+    <section class="shop" id="shop" aria-labelledby="shop-title">
+      <div class="container">
+        <div class="shop__head">
+          <h2 id="shop-title" class="h2">And the rest of the shop</h2>
+          <p>Games, puzzles, wooden toys, Tonies and kids' clothes, from brands like Djeco, Janod, Frugi and Sylvanian Families.</p>
+        </div>
+        <div class="bento">
+          <a class="tile tile--games" href="https://www.just-jonah.co.uk/games-puzzles">
+            <img src="../assets/products/tile-pokemon.jpg" alt="" loading="lazy">
+            <span class="tile__label"><span class="tile__name">Games &amp; puzzles</span><span class="tile__meta">Pokémon cards, Smart Games, Ginger Fox</span></span>
+          </a>
+          <a class="tile" href="https://www.just-jonah.co.uk/toys">
+            <img src="../assets/products/tile-djeco.jpg" alt="" loading="lazy">
+            <span class="tile__label"><span class="tile__name">Toys</span><span class="tile__meta">Djeco, Plus-Plus, Needoh</span></span>
+          </a>
+          <a class="tile" href="https://www.just-jonah.co.uk/baby-and-toddler-brands">
+            <img src="../assets/products/tile-janod.jpg" alt="" loading="lazy">
+            <span class="tile__label"><span class="tile__name">Baby &amp; toddler</span><span class="tile__meta">Janod, Steiff, BigJigs</span></span>
+          </a>
+          <a class="tile" href="https://www.just-jonah.co.uk/shop/sylvanian-families/EB4HXDYLJJMXGJWXGLGMUUHB">
+            <img src="../assets/products/tile-sylvanian.jpg" alt="" loading="lazy">
+            <span class="tile__label"><span class="tile__name">Sylvanian Families</span><span class="tile__meta">Families, homes and sets</span></span>
+          </a>
+          <a class="tile" href="https://www.just-jonah.co.uk/shop/tonies/254">
+            <img src="../assets/products/tile-tonies.jpg" alt="" loading="lazy">
+            <span class="tile__label"><span class="tile__name">Tonies</span><span class="tile__meta">Toniebox 2 and figures</span></span>
+          </a>
+          <a class="tile tile--clothes" href="https://www.just-jonah.co.uk/shop/all-clothing/154">
+            <span class="tile__label"><span class="tile__name">Kids' clothing</span><span class="tile__meta">Frugi, Toby Tiger, Piccalilly, Little Dutch and more</span></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="marquee" aria-label="Some of the brands we stock">
+        <ul class="marquee__track">
+          <li>Djeco</li><li>Janod</li><li>Little Dutch</li><li>Tonies</li><li>Sylvanian Families</li><li>Smart Games</li><li>Orchard Toys</li><li>Frugi</li><li>Green Toys</li><li>Plus-Plus</li><li>Crazy Aaron's</li><li>Ginger Fox</li><li>Steiff</li><li>Usborne</li><li>Brainstorm</li><li>Floss &amp; Rock</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ Visit ============ -->
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+      <div class="container visit__grid">
+        <div class="visit__info">
+          <h2 id="visit-title" class="h2">Come and see us in Fowey</h2>
+          <p class="visit__lede">See the Fahlo range, games, puzzles and toys in person at our shop on Fore Street.</p>
+
+          <div class="live" data-open-pill>
+            <span class="live__dot" aria-hidden="true"></span>
+            <span class="live__text" data-open-text>Open every day</span>
+          </div>
+
+          <dl class="facts">
+            <div><dt>Address</dt><dd>36A Fore Street, Fowey, Cornwall PL23 1AQ</dd></div>
+            <div><dt>Hours</dt><dd>Every day, 10am to 5:30pm</dd></div>
+            <div><dt>Phone</dt><dd><a href="tel:01726458369">01726 458369</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:contact@just-jonah.co.uk">contact@just-jonah.co.uk</a></dd></div>
+          </dl>
+
+          <a class="btn btn--dark" href="https://www.google.com/maps/dir/?api=1&amp;destination=Just+Jonah+36A+Fore+Street+Fowey+PL23+1AQ" target="_blank" rel="noopener">Get directions</a>
+        </div>
+
+        <figure class="topo" aria-label="Contour map of the Fowey estuary with Just Jonah marked on Fore Street">
+          <svg viewBox="0 0 600 560" data-topo>
+            <rect width="600" height="560" fill="#F4F8F1"/>
+            <g data-contours fill="none" stroke="#9BBFA3" stroke-width="1.2"></g>
+            <path class="topo__river" d="M360 0 C 330 90 390 150 352 230 S 270 350 330 440 S 410 520 392 560 L 600 560 L 600 470 C 556 452 516 418 520 360 S 486 200 472 0Z"/>
+            <path class="topo__bank" d="M360 0 C 330 90 390 150 352 230 S 270 350 330 440 S 410 520 392 560 M600 470 C 556 452 516 418 520 360 S 486 200 472 0"/>
+            <g class="topo__ping" transform="translate(318 270)">
+              <circle r="10" class="topo__ring"/>
+              <circle r="10" class="topo__ring topo__ring--2"/>
+              <circle r="9" fill="#FFC93C" stroke="#0F3D2E" stroke-width="3"/>
+            </g>
+            <g transform="translate(110 236)">
+              <rect width="178" height="68" rx="10" fill="#0F3D2E"/>
+              <text x="16" y="29" class="topo__label">Just Jonah</text>
+              <text x="16" y="50" class="topo__coords">50.33° N, 4.64° W</text>
+              <path d="M178 26 L198 34 L178 42Z" fill="#0F3D2E"/>
+            </g>
+            <text x="368" y="120" class="topo__place topo__place--water">River Fowey</text>
+            <text x="530" y="300" class="topo__place">Polruan</text>
+            <text x="60" y="80" class="topo__place">Fowey</text>
+            <text x="500" y="536" class="topo__place topo__place--water">To the sea</text>
+          </svg>
+        </figure>
+      </div>
+
+      <div class="container delivery" id="delivery">
+        <h3 class="delivery__title">Not nearby? We post from Fowey every day.</h3>
+        <ul class="delivery__list">
+          <li><span class="delivery__price">£4.20</span><span>Royal Mail Tracked 48</span></li>
+          <li><span class="delivery__price">£4.99</span><span>Royal Mail Tracked 24</span></li>
+          <li><span class="delivery__price">£9.45</span><span>Special Delivery by 1pm, order by 4pm on weekdays</span></li>
+        </ul>
+        <p class="delivery__note">Sending abroad? <a href="https://www.just-jonah.co.uk/contact-us">Message us for a postage price</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ Newsletter ============ -->
+    <section class="notes" aria-labelledby="notes-title">
+      <div class="container notes__inner">
+        <div>
+          <h2 id="notes-title" class="h2">Get our field notes</h2>
+          <p>News, offers and competitions from the shop. One or two emails a week, never more.</p>
+        </div>
+        <form class="notes__form" data-signup novalidate>
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="Your email address" autocomplete="email" required>
+          <button class="btn btn--tag" type="submit">Sign up</button>
+          <p class="notes__msg" data-signup-msg role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="wordmark wordmark--footer" href="#top">Just Jonah<span class="wordmark__ping" aria-hidden="true"></span></a>
+        <p>36A Fore Street, Fowey PL23 1AQ<br><a href="tel:01726458369">01726 458369</a><br><a href="mailto:contact@just-jonah.co.uk">contact@just-jonah.co.uk</a></p>
+      </div>
+      <nav aria-label="Shop">
+        <h3>Shop</h3>
+        <a href="https://www.just-jonah.co.uk/shop/fahlo/258">Fahlo bracelets</a>
+        <a href="https://www.just-jonah.co.uk/shop/fahlo-plush/X3LX6RVU7JCOZQZY5TNJDN47">Fahlo plush</a>
+        <a href="https://www.just-jonah.co.uk/games-puzzles">Games &amp; puzzles</a>
+        <a href="https://www.just-jonah.co.uk/toys">Toys</a>
+        <a href="https://squareup.com/gift/HEW9SERP53TC3/order">Gift cards</a>
+      </nav>
+      <nav aria-label="Help">
+        <h3>Help</h3>
+        <a href="https://www.just-jonah.co.uk/delivery-and-returns">Delivery and returns</a>
+        <a href="https://www.just-jonah.co.uk/contact-us">Contact us</a>
+        <a href="https://www.just-jonah.co.uk/privacy-policy">Privacy policy</a>
+        <a href="https://www.just-jonah.co.uk/cookie-policy">Cookie policy</a>
+      </nav>
+      <nav aria-label="Social">
+        <h3>Follow the shop</h3>
+        <a href="https://www.instagram.com/justjonahltd">Instagram</a>
+        <a href="https://www.facebook.com/justjonahltd">Facebook</a>
+        <a href="https://www.tiktok.com/@justjonahltd">TikTok</a>
+        <a href="https://www.youtube.com/@justjonahfowey">YouTube</a>
+      </nav>
+    </div>
+    <div class="container footer__legal">
+      <p>Just Jonah Ltd. Registered in England and Wales, 11067255. VAT number 391 9479 43.</p>
+      <p>Globe routes are illustrative. Real tracks live in the Fahlo app.</p>
+      <p>&copy; <span data-year>2026</span> Just Jonah</p>
+    </div>
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="../assets/fahlo.js"></script>
+  <script src="land.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
